@@ -42,7 +42,7 @@ const Contact = () => {
             }
 
             setSubmitStatus('success')
-            setStatusMessage('Thank you! Your message has been sent successfully. I&apos;ll get back to you soon.')
+            setStatusMessage('Thank you! Your message has been sent successfully. I\'ll get back to you soon.')
 
             // Reset form after successful submission
             setFormData({
