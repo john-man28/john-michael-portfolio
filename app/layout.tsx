@@ -3,7 +3,7 @@ import type { Metadata } from 'next'
 import './globals.css'
 
 export const metadata: Metadata = {
-    metadataBase: new URL('https://johnmichaelmanlapaz.com'),
+    metadataBase: new URL('https://john-michael-portfolio.vercel.app'),
     title: 'John Michael T. Manlapaz - Full Stack Developer Portfolio',
     description: 'Full Stack Developer with backend focus. Career shifter from Mechanical Engineering to Software Development. Experienced in Laravel, PHP, React, and automation tools.',
     keywords: ['portfolio', 'full stack developer', 'backend developer', 'John Michael Manlapaz', 'Laravel', 'PHP', 'React', 'automation', 'mechanical engineer', 'career shifter'],
@@ -33,6 +33,9 @@ export default function RootLayout({
 }) {
     return (
         <html lang="en" className="scroll-smooth">
+            <head>
+                <link rel="icon" href="/favicon.ico" sizes="any" />
+            </head>
             <body className="min-h-screen bg-gray-50 text-gray-900 antialiased">
                 <div className="relative">
                     {children}
