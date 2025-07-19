@@ -1,5 +1,6 @@
 import React from 'react'
 import { Code, Database, Cloud, Smartphone, Palette, Settings } from 'lucide-react'
+import Image from 'next/image'
 
 const Skills = () => {
     const skillCategories = [
@@ -105,7 +106,7 @@ const Skills = () => {
                 <div className="mt-16">
                     <div className="text-center mb-8">
                         <h3 className="text-2xl font-semibold text-gray-900 mb-2">Familiar With</h3>
-                        <p className="text-gray-600">Technologies I have experience with but don't use daily</p>
+                        <p className="text-gray-600">Technologies I have experience with but don&apos;t use daily</p>
                     </div>
                     <div className="flex flex-wrap justify-center gap-3">
                         {[

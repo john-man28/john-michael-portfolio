@@ -1,6 +1,7 @@
 'use client'
 
 import React, { useState } from 'react'
+import Image from 'next/image'
 import { ExternalLink, Github, Folder, ChevronLeft, ChevronRight, X } from 'lucide-react'
 
 const Projects = () => {
@@ -105,7 +106,7 @@ const Projects = () => {
                         Featured <span className="text-gradient">Projects</span>
                     </h2>
                     <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-                        Automation tools and web applications I've built to streamline business operations
+                        Automation tools and web applications I&apos;ve built to streamline business operations
                     </p>
                 </div>
 
@@ -124,9 +125,11 @@ const Projects = () => {
                                         <div className="aspect-video bg-gradient-to-br from-gray-200 to-gray-300 flex items-center justify-center relative cursor-pointer group">
                                             {project.images.length > 0 ? (
                                                 <>
-                                                    <img
+                                                    <Image
                                                         src={project.images[currentImageIndex[index] || 0]?.src}
                                                         alt={project.images[currentImageIndex[index] || 0]?.title || 'Project Screenshot'}
+                                                        width={800}
+                                                        height={600}
                                                         className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                                                         onClick={() => openModal(index, currentImageIndex[index] || 0)}
                                                         onError={(e) => {
@@ -308,9 +311,11 @@ const Projects = () => {
 
                         {/* Modal Image */}
                         <div className="relative flex-1 flex items-center justify-center p-6">
-                            <img
+                            <Image
                                 src={projects[modalProject].images[modalImageIndex]?.src}
                                 alt={projects[modalProject].images[modalImageIndex]?.title || 'Project Screenshot'}
+                                width={1200}
+                                height={800}
                                 className="max-w-full max-h-full object-contain rounded-lg shadow-lg"
                             />
 

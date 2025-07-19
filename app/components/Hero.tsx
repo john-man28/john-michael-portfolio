@@ -1,6 +1,7 @@
 'use client'
 
 import React from 'react'
+import Image from 'next/image'
 import { ArrowDown, Download, Mail, Github, Linkedin } from 'lucide-react'
 
 const Hero = () => {
@@ -41,9 +42,11 @@ const Hero = () => {
                     {/* Profile Image */}
                     <div className="mx-auto w-32 h-32 rounded-full bg-gradient-to-r from-primary-500 to-primary-600 p-1 animate-slide-up">
                         <div className="w-full h-full rounded-full overflow-hidden">
-                            <img
+                            <Image
                                 src="/profile.jpg"
                                 alt="John Michael Manlapaz"
+                                width={128}
+                                height={128}
                                 className="w-full h-full object-cover"
                                 onError={(e) => {
                                     // Fallback to initials if image fails to load

@@ -21,7 +21,7 @@ const About = () => {
                             </h2>
                             <div className="space-y-6 text-gray-600 text-lg leading-relaxed">
                                 <p>
-                                    I'm a career shifter who transitioned from Mechanical Engineering to Software Development.
+                                    I&apos;m a career shifter who transitioned from Mechanical Engineering to Software Development.
                                     With a BS in Mechanical Engineering from Holy Angel University and experience as an
                                     Equipment Engineer at Texas Instruments, I bring a unique analytical mindset to software development.
                                 </p>

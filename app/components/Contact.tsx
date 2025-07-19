@@ -42,7 +42,7 @@ const Contact = () => {
             }
 
             setSubmitStatus('success')
-            setStatusMessage('Thank you! Your message has been sent successfully. I\'ll get back to you soon.')
+            setStatusMessage('Thank you! Your message has been sent successfully. I&apos;ll get back to you soon.')
 
             // Reset form after successful submission
             setFormData({
@@ -81,7 +81,7 @@ const Contact = () => {
                         Get In <span className="text-gradient">Touch</span>
                     </h2>
                     <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-                        Have a project in mind or want to collaborate? I'd love to hear from you!
+                        Have a project in mind or want to collaborate? I&apos;d love to hear from you!
                     </p>
                 </div>
 
@@ -89,10 +89,10 @@ const Contact = () => {
                     {/* Contact Info */}
                     <div className="space-y-8">
                         <div>
-                            <h3 className="text-2xl font-semibold text-gray-900 mb-6">Let's Connect</h3>
+                            <h3 className="text-2xl font-semibold text-gray-900 mb-6">Let&apos;s Connect</h3>
                             <p className="text-gray-600 text-lg leading-relaxed mb-8">
-                                I'm always interested in hearing about new opportunities for automation projects,
-                                software development roles, or collaborations. Let's discuss how I can help
+                                I&apos;m always interested in hearing about new opportunities for automation projects,
+                                software development roles, or collaborations. Let&apos;s discuss how I can help
                                 streamline your business operations through innovative technology solutions.
                             </p>
                         </div>
